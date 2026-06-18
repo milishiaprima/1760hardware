@@ -448,7 +448,7 @@ export default function PowerTools() {
                 {/* CTA */}
                 <div className="border-t bg-gray-50 p-4">
                   <a
-                    href="https://wa.me/254701761622"
+                    href="https://wa.me/254708932609"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2 text-sm"
@@ -510,7 +510,7 @@ export default function PowerTools() {
             Contact us for bulk orders, wholesale pricing, and technical support
           </p>
           <a
-            href="https://wa.me/254701761622"
+            href="https://wa.me/254708932609"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white text-orange-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"

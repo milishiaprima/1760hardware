@@ -418,7 +418,7 @@ export default function ProductAccessories() {
 
                   {/* CTA Button */}
                   <a
-                    href="https://wa.me/254701761622?text=Hi,%20I%20am%20interested%20in%20the%20product%20accessory"
+                    href="https://wa.me/254708932609?text=Hi,%20I%20am%20interested%20in%20the%20product%20accessory"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center w-full bg-green-500 hover:bg-green-600 active:bg-green-700 text-white font-semibold py-2 px-3 sm:px-4 rounded-lg transition-colors duration-300 text-xs sm:text-sm gap-1.5"
@@ -469,7 +469,7 @@ export default function ProductAccessories() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-4">Need Bulk Orders?</h2>
           <p className="text-xs sm:text-base text-orange-100 mb-4 sm:mb-8 leading-relaxed">Contact us for competitive wholesale pricing and special discounts</p>
           <a
-            href="https://wa.me/254701761622"
+            href="https://wa.me/254708932609"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center bg-green-500 hover:bg-green-600 active:bg-green-700 text-white font-bold py-2 sm:py-3 px-4 sm:px-8 rounded-lg transition-colors duration-300 gap-2 text-xs sm:text-base"

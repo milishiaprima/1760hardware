@@ -5,7 +5,6 @@ import { useState, useEffect } from 'react';
 import { Navbar, Footer } from '@/components/index';
 import {
   ArrowRight,
-  ChevronDown,
 } from 'lucide-react';
 
 // WhatsApp Icon Component
@@ -25,22 +24,17 @@ export default function Home() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [currentPartnerIndex, setCurrentPartnerIndex] = useState(0);
-  const images = ['/junior%20new/front%20view.jpeg', '/junior%20new/new%20junior%20h.jpeg', '/junior%20new/view%20hardware.jpeg', '/junior%20new/kitchen%20sink.jpeg', '/junior%20new/junior%20pipes.jpeg'];
+  const images = [
+    '/doors/machine.jpg',
+    '/doors/saw machine.jpg',
+    '/doors/hardware.jpg',
+    '/doors/home door.jpg',
+    '/doors/doors interior.jpg',
+    '/doors/1760.jpg',
+  ];
 
   const partners = [
     { name: 'Aura Stack', logo: '/partner/logo_aura-removebg-preview.png', subtitle: 'Software Company' },
-  ];
-
-  const categories = [
-    { name: 'Cordless Tools', href: '/products/cordless-tools' },
-    { name: 'Power Tools', href: '/products/power-tools' },
-    { name: 'Power Tool Accessories', href: '/products/product-accessories' },
-    { name: 'Generators', href: '/products/generators' },
-    { name: 'Welding Machine', href: '/products/welding' },
-    { name: 'Small Construction Equipment', href: '/products/small-construction-equipment' },
-    { name: 'Air Tools', href: '/products/air-tools' },
-    { name: 'Water Pumps', href: '/products/water-pump' },
-    { name: 'Measuring Tool', href: '/products/measuring-tool' },
   ];
 
   useEffect(() => {
@@ -79,8 +73,8 @@ export default function Home() {
     <>
       <Navbar />
 
-      {/* Hero Section - New Junior Hardware */}
-      <section className="bg-linear-to-br from-slate-900 via-slate-900 to-slate-800 text-white py-12 md:py-20 lg:py-32 overflow-hidden">
+      {/* Hero Section - 1760 Hardware */}
+      <section className="bg-linear-to-br from-black via-slate-900 to-gray-900 text-white py-12 md:py-20 lg:py-32 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
@@ -89,18 +83,18 @@ export default function Home() {
                 ✨ Now Available
               </div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
-                New <span className="text-orange-500">Junior Hardware</span>
+                <span className="text-orange-500">1760 Hardware</span>
               </h1>
               <p className="text-lg sm:text-xl text-gray-300 mb-4 sm:mb-8">
-                Professional-one stop for hardware solutions 
+                Leading Doors Manufacturer & Interior Finishes
               </p>
               <p className="text-base sm:text-lg text-gray-400 mb-6 sm:mb-8">
-                unlock  cutting-edge hardware solutions services, product and materials 
+                Premium doors with elegant interior finishes and hardware solutions for residential, commercial, and industrial needs
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
                 <a
-                  href="https://wa.me/254701761622"
+                  href="https://wa.me/254708932609"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-colors text-sm sm:text-base w-full sm:w-auto"
@@ -109,7 +103,7 @@ export default function Home() {
                   <ArrowRight size={18} className="hidden sm:block" />
                 </a>
                 <a
-                  href="https://wa.me/254701761622"
+                  href="https://wa.me/254708932609"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-colors text-sm sm:text-base w-full sm:w-auto"
@@ -171,39 +165,58 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Products Categories Section */}
-      <section className="py-12 sm:py-20 md:py-32 bg-linear-to-b from-gray-50 to-white">
+      {/* Featured Products Section */}
+      <section className="py-16 sm:py-24 md:py-32 bg-linear-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Header */}
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
-              Featured Product <span className="text-orange-500">Categories</span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+              Featured <span className="text-orange-500">Door Products</span>
             </h2>
-            <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
-              Premium quality hardware and plumbing fixtures for professionals
+            <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+              Explore our premium collection of doors designed for quality and durability
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 mb-12">
-            {/* Pipes Product */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 mx-auto w-full max-w-sm">
-              <div className="relative h-56 w-full bg-gray-200">
+          {/* Products Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Product 1: Exterior Doors */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+              {/* Product Image */}
+              <div className="relative h-60 sm:h-64 overflow-hidden bg-gray-200">
                 <Image
-                  src="/pipe.jpeg"
-                  alt="Pipes"
+                  src="/doors/home%20door.jpg"
+                  alt="Exterior Doors"
                   fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
+                  className="object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              <div className="p-4 sm:p-6">
-                <h3 className="text-lg sm:text-2xl font-bold text-slate-900 mb-2">Pipes</h3>
-                <p className="text-gray-600 text-sm sm:text-base mb-4">High-quality durable pipes for all plumbing needs</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs sm:text-sm font-semibold">Durable</span>
-                  <span className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs sm:text-sm font-semibold">Long-lasting</span>
+
+              {/* Product Info */}
+              <div className="p-5 sm:p-6">
+                {/* Product Name */}
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-2">
+                  Exterior Doors
+                </h3>
+
+                {/* Description */}
+                <p className="text-gray-600 text-sm mb-4">
+                  Durable and stylish exterior doors designed for protection and curb appeal. Built to withstand harsh weather conditions.
+                </p>
+
+                {/* Feature Tags */}
+                <div className="flex flex-wrap gap-2 mb-5">
+                  <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-semibold">Weather-resistant</span>
+                  <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-semibold">Secure</span>
+                  <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-semibold">Premium</span>
                 </div>
+
+                {/* CTA Button */}
                 <a
-                  href="https://wa.me/254701761622"
-                  className="w-full bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2 text-sm sm:text-base"
+                  href="https://wa.me/254708932609?text=Hi,%20I%20am%20interested%20in%20exterior%20doors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-lg font-semibold transition-colors text-sm"
                 >
                   <WhatsAppIcon />
                   Order via WhatsApp
@@ -211,28 +224,43 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Tanks Product */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 mx-auto w-full max-w-sm">
-              <div className="relative h-56 w-full bg-gray-200">
+            {/* Product 2: Machines */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+              {/* Product Image */}
+              <div className="relative h-60 sm:h-64 overflow-hidden bg-gray-200">
                 <Image
-                  src="/tank.jpeg"
-                  alt="Tanks"
+                  src="/doors/machine.jpg"
+                  alt="Processing Machines"
                   fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
+                  className="object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              <div className="p-4 sm:p-6">
-                <h3 className="text-lg sm:text-2xl font-bold text-slate-900 mb-2">Tanks</h3>
-                <p className="text-gray-600 text-sm sm:text-base mb-4">Premium water storage tanks for residential and commercial use</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs sm:text-sm font-semibold">Large Capacity</span>
-                  <span className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs sm:text-sm font-semibold">Leak-proof</span>
+
+              {/* Product Info */}
+              <div className="p-5 sm:p-6">
+                {/* Product Name */}
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-2">
+                  Processing Machines
+                </h3>
+
+                {/* Description */}
+                <p className="text-gray-600 text-sm mb-4">
+                  Advanced machines used to process high-quality doors. Ensuring precision and durability in every product we manufacture.
+                </p>
+
+                {/* Feature Tags */}
+                <div className="flex flex-wrap gap-2 mb-5">
+                  <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-semibold">Precision</span>
+                  <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-semibold">High-Tech</span>
+                  <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-semibold">Quality</span>
                 </div>
+
+                {/* CTA Button */}
                 <a
-                  href="https://wa.me/254701761622"
+                  href="https://wa.me/254708932609?text=Hi,%20I%20am%20interested%20in%20learning%20more%20about%20your%20processing%20machines"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2 text-sm sm:text-base"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-lg font-semibold transition-colors text-sm"
                 >
                   <WhatsAppIcon />
                   Order via WhatsApp
@@ -240,28 +268,43 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Ceramic Fixtures Product */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <div className="relative h-56 w-full bg-gray-200">
+            {/* Product 3: Premium Interior Doors - 1760 */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+              {/* Product Image */}
+              <div className="relative h-60 sm:h-64 overflow-hidden bg-gray-200">
                 <Image
-                  src="/cera.jpeg"
-                  alt="Ceramic Fixtures"
+                  src="/doors/1760.jpg"
+                  alt="Premium Interior Doors 1760"
                   fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
+                  className="object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">Ceramic Fixtures</h3>
-                <p className="text-gray-600 mb-4">Premium ceramic bathroom and kitchen fixtures</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-semibold">Modern Design</span>
-                  <span className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-semibold">Durable</span>
+
+              {/* Product Info */}
+              <div className="p-5 sm:p-6">
+                {/* Product Name */}
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-2">
+                  Premium Interior Doors 1760
+                </h3>
+
+                {/* Description */}
+                <p className="text-gray-600 text-sm mb-4">
+                  Premium quality interior doors featuring the latest 1760 design collection. Crafted with precision and elegance.
+                </p>
+
+                {/* Feature Tags */}
+                <div className="flex flex-wrap gap-2 mb-5">
+                  <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-semibold">Premium</span>
+                  <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-semibold">Elegant</span>
+                  <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-semibold">Precision</span>
                 </div>
+
+                {/* CTA Button */}
                 <a
-                  href="https://wa.me/254701761622"
+                  href="https://wa.me/254708932609?text=Hi,%20I%20am%20interested%20in%20premium%20interior%20doors%201760"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-lg font-semibold transition-colors text-sm"
                 >
                   <WhatsAppIcon />
                   Order via WhatsApp
@@ -269,190 +312,493 @@ export default function Home() {
               </div>
             </div>
 
-            {/* INGCO Tools Product */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <div className="relative h-56 w-full bg-gray-200">
-                <Image
-                  src="/ingco/junior%20yellow.jpeg"
-                  alt="INGCO Tools"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">INGCO Tools</h3>
-                <p className="text-gray-600 mb-4">Professional power tools for hardware enthusiasts</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-semibold">Modern</span>
-                  <span className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-semibold">Professional</span>
+
+          </div>
+        </div>
+      </section>
+
+      {/* Door Features/Types Section */}
+      <section className="py-16 sm:py-24 md:py-32 relative overflow-hidden">
+        {/* Premium Gradient Background */}
+        <div className="absolute inset-0 bg-linear-to-br from-slate-950 via-amber-950 to-slate-900"></div>
+        
+        {/* Animated Decorative Elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          {/* Large blurred circles */}
+          <div className="absolute -top-40 left-1/4 w-96 h-96 bg-amber-500 rounded-full blur-3xl opacity-20 animate-pulse"></div>
+          <div className="absolute top-1/3 -right-32 w-80 h-80 bg-yellow-400 rounded-full blur-3xl opacity-15 animate-pulse" style={{animationDelay: '0.5s'}}></div>
+          <div className="absolute -bottom-20 right-1/4 w-72 h-72 bg-orange-500 rounded-full blur-3xl opacity-10 animate-pulse" style={{animationDelay: '1s'}}></div>
+          
+          {/* Gradient overlay patterns */}
+          <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent"></div>
+          
+          {/* Diagonal lines pattern */}
+          <svg className="absolute w-full h-full opacity-5" preserveAspectRatio="none">
+            <defs>
+              <pattern id="diagonalLines2" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+                <line x1="0" y1="0" x2="50" y2="50" stroke="white" strokeWidth="1"/>
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#diagonalLines2)"/>
+          </svg>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* Section Header - Enhanced */}
+          <div className="text-center mb-16 sm:mb-24">
+            <div className="inline-block mb-6 px-5 py-2.5 bg-linear-to-r from-amber-500/30 to-orange-500/30 rounded-full border-2 border-amber-400/60 backdrop-blur-md">
+              <p className="text-amber-200 text-xs sm:text-sm font-bold tracking-widest uppercase drop-shadow-lg">Premium Door Collections</p>
+            </div>
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 tracking-tight text-white drop-shadow-lg">
+              Our <span className="bg-linear-to-r from-amber-400 via-yellow-400 to-orange-400 bg-clip-text text-transparent">Door Features</span>
+            </h2>
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <div className="h-1 w-12 bg-linear-to-r from-transparent to-amber-500"></div>
+              <div className="h-1.5 w-20 bg-linear-to-r from-amber-500 via-yellow-400 to-orange-500"></div>
+              <div className="h-1 w-12 bg-linear-to-l from-transparent to-amber-500"></div>
+            </div>
+            <p className="text-base sm:text-lg text-gray-200 max-w-3xl mx-auto font-light leading-relaxed">
+              Premium doors designed for every need, style, and application with uncompromising quality standards
+            </p>
+          </div>
+
+          {/* Features Grid - Enhanced with Unique Styles */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mx-auto">
+            {/* Wooden Doors - Amber/Gold */}
+            <div className="group relative rounded-3xl p-0.5 overflow-hidden cursor-pointer h-full">
+              <div className="absolute inset-0 bg-linear-to-br from-amber-500 via-yellow-500 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative bg-linear-to-br from-slate-900 via-amber-950/30 to-slate-900 backdrop-blur-xl rounded-3xl overflow-hidden h-full flex flex-col transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-2xl group-hover:shadow-amber-500/20">
+                <div className="absolute inset-0 bg-linear-to-br from-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute top-0 right-0 w-32 h-32 bg-linear-to-br from-amber-500/20 to-transparent rounded-full blur-3xl group-hover:scale-150 transition-transform duration-500"></div>
+                
+                <div className="relative h-48 bg-linear-to-br from-amber-100 via-yellow-100 to-orange-100 flex items-center justify-center overflow-hidden shrink-0">
+                  <div className="text-6xl transform group-hover:scale-125 transition-transform duration-500 drop-shadow-lg">🚪</div>
                 </div>
-                <a
-                  href="https://wa.me/254701761622"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2"
-                >
-                  <WhatsAppIcon />
-                  Order via WhatsApp
-                </a>
+                
+                <div className="relative p-6 flex flex-col grow">
+                  <span className="inline-block w-fit text-xs font-bold text-amber-300 uppercase tracking-widest mb-3 bg-amber-500/20 px-3 py-1 rounded-full">01 Popular</span>
+                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-amber-300 transition-colors">Wooden Doors</h3>
+                  <p className="text-gray-300 leading-relaxed text-sm mb-6 grow">Classic wooden doors with elegant finishes and superior durability for timeless elegance</p>
+                  <a href="/products/wooden-doors" className="inline-flex items-center gap-2 text-amber-300 font-semibold hover:text-amber-200 text-sm group/link mt-auto">
+                    <span>Learn more</span>
+                    <span className="transform group-hover/link:translate-x-1 transition-transform">→</span>
+                  </a>
+                </div>
               </div>
             </div>
 
-            {/* INGCO Professional Tools Product */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <div className="relative h-56 w-full bg-gray-200">
-                <Image
-                  src="/ingco/junior%20ingco.jpeg"
-                  alt="INGCO Professional Tools"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">INGCO Professional</h3>
-                <p className="text-gray-600 mb-4">Heavy-duty professional tools for construction work</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-semibold">Heavy Duty</span>
-                  <span className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-semibold">Durable</span>
+
+
+            {/* Glass Doors - Cyan/Blue */}
+            <div className="group relative rounded-3xl p-0.5 overflow-hidden cursor-pointer h-full">
+              <div className="absolute inset-0 bg-linear-to-br from-cyan-500 via-sky-500 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative bg-linear-to-br from-slate-900 via-cyan-950/30 to-slate-900 backdrop-blur-xl rounded-3xl overflow-hidden h-full flex flex-col transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-2xl group-hover:shadow-cyan-500/20">
+                <div className="absolute inset-0 bg-linear-to-br from-cyan-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute top-0 right-0 w-32 h-32 bg-linear-to-br from-cyan-500/20 to-transparent rounded-full blur-3xl group-hover:scale-150 transition-transform duration-500"></div>
+                
+                <div className="relative h-48 bg-linear-to-br from-blue-100 via-cyan-100 to-sky-100 flex items-center justify-center overflow-hidden shrink-0">
+                  <div className="text-6xl transform group-hover:scale-125 transition-transform duration-500 drop-shadow-lg">✨</div>
                 </div>
-                <a
-                  href="https://wa.me/254701761622"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2"
-                >
-                  <WhatsAppIcon />
-                  Order via WhatsApp
-                </a>
+                
+                <div className="relative p-6 flex flex-col grow">
+                  <span className="inline-block w-fit text-xs font-bold text-cyan-300 uppercase tracking-widest mb-3 bg-cyan-500/20 px-3 py-1 rounded-full">03 Modern</span>
+                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors">Glass Doors</h3>
+                  <p className="text-gray-300 leading-relaxed text-sm mb-6 grow">Modern glass doors for contemporary designs and enhanced natural light flow</p>
+                  <a href="/products/wooden-doors" className="inline-flex items-center gap-2 text-cyan-300 font-semibold hover:text-cyan-200 text-sm group/link mt-auto">
+                    <span>Learn more</span>
+                    <span className="transform group-hover/link:translate-x-1 transition-transform">→</span>
+                  </a>
+                </div>
               </div>
             </div>
 
-            {/* INGCO Showers Product */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <div className="relative h-56 w-full bg-gray-200">
-                <Image
-                  src="/ingco/showers.jpeg"
-                  alt="INGCO Showers"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">Showers</h3>
-                <p className="text-gray-600 mb-4">Modern shower systems and fixtures for your bathroom</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-semibold">Modern Design</span>
-                  <span className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-semibold">Premium Quality</span>
+            {/* Interior Doors - Rose/Pink */}
+            <div className="group relative rounded-3xl p-0.5 overflow-hidden cursor-pointer h-full">
+              <div className="absolute inset-0 bg-linear-to-br from-rose-500 via-pink-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative bg-linear-to-br from-slate-900 via-rose-950/30 to-slate-900 backdrop-blur-xl rounded-3xl overflow-hidden h-full flex flex-col transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-2xl group-hover:shadow-rose-500/20">
+                <div className="absolute inset-0 bg-linear-to-br from-rose-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute top-0 right-0 w-32 h-32 bg-linear-to-br from-rose-500/20 to-transparent rounded-full blur-3xl group-hover:scale-150 transition-transform duration-500"></div>
+                
+                <div className="relative h-48 bg-linear-to-br from-purple-100 via-pink-100 to-rose-100 flex items-center justify-center overflow-hidden shrink-0">
+                  <div className="text-6xl transform group-hover:scale-125 transition-transform duration-500 drop-shadow-lg">🎨</div>
                 </div>
-                <a
-                  href="https://wa.me/254701761622"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2"
-                >
-                  <WhatsAppIcon />
-                  Order via WhatsApp
-                </a>
+                
+                <div className="relative p-6 flex flex-col grow">
+                  <span className="inline-block w-fit text-xs font-bold text-rose-300 uppercase tracking-widest mb-3 bg-rose-500/20 px-3 py-1 rounded-full">04 Design</span>
+                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-rose-300 transition-colors">Interior Doors</h3>
+                  <p className="text-gray-300 leading-relaxed text-sm mb-6 grow">Stylish interior doors to enhance and transform your home interior design perfectly</p>
+                  <a href="/products/wooden-doors" className="inline-flex items-center gap-2 text-rose-300 font-semibold hover:text-rose-200 text-sm group/link mt-auto">
+                    <span>Learn more</span>
+                    <span className="transform group-hover/link:translate-x-1 transition-transform">→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose 1760 Hardware Section */}
+      <section className="py-16 sm:py-24 md:py-32 relative overflow-hidden">
+        {/* Premium Gradient Background */}
+        <div className="absolute inset-0 bg-linear-to-br from-slate-950 via-orange-950 to-slate-900"></div>
+        
+        {/* Animated Decorative Elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          {/* Large blurred circles */}
+          <div className="absolute -top-40 -left-40 w-96 h-96 bg-orange-500 rounded-full blur-3xl opacity-20 animate-pulse"></div>
+          <div className="absolute top-1/2 -right-32 w-80 h-80 bg-amber-400 rounded-full blur-3xl opacity-15 animate-pulse" style={{animationDelay: '0.5s'}}></div>
+          <div className="absolute bottom-0 left-1/3 w-72 h-72 bg-red-500 rounded-full blur-3xl opacity-10 animate-pulse" style={{animationDelay: '1s'}}></div>
+          
+          {/* Gradient overlay patterns */}
+          <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent"></div>
+          
+          {/* Diagonal lines pattern */}
+          <svg className="absolute w-full h-full opacity-5" preserveAspectRatio="none">
+            <defs>
+              <pattern id="diagonalLines" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+                <line x1="0" y1="0" x2="50" y2="50" stroke="white" strokeWidth="1"/>
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#diagonalLines)"/>
+          </svg>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* Section Header - Enhanced */}
+          <div className="text-center mb-16 sm:mb-24">
+            <div className="inline-block mb-6 px-5 py-2.5 bg-linear-to-r from-orange-500/30 to-amber-500/30 rounded-full border-2 border-orange-400/60 backdrop-blur-md">
+              <p className="text-orange-200 text-xs sm:text-sm font-bold tracking-widest uppercase drop-shadow-lg">Why Leading Businesses Trust Us</p>
+            </div>
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 tracking-tight text-white drop-shadow-lg">
+              Why Choose <span className="bg-linear-to-r from-orange-400 via-amber-400 to-red-400 bg-clip-text text-transparent">1760 Hardware</span>
+            </h2>
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <div className="h-1 w-12 bg-linear-to-r from-transparent to-orange-500"></div>
+              <div className="h-1.5 w-20 bg-linear-to-r from-orange-500 via-amber-400 to-orange-500"></div>
+              <div className="h-1 w-12 bg-linear-to-l from-transparent to-orange-500"></div>
+            </div>
+            <p className="text-base sm:text-lg text-gray-200 max-w-3xl mx-auto font-light leading-relaxed">
+              Industry-leading quality, innovation, and exceptional customer service that sets us apart
+            </p>
+          </div>
+
+          {/* Why Choose Grid - Enhanced with Unique Styles */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {/* Card 1: Quality - Orange/Gold */}
+            <div className="group relative rounded-3xl p-0.5 overflow-hidden cursor-pointer">
+              <div className="absolute inset-0 bg-linear-to-br from-orange-500 via-amber-500 to-red-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative bg-linear-to-br from-slate-900 via-orange-950/30 to-slate-900 backdrop-blur-xl rounded-3xl p-8 sm:p-10 h-full transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-2xl group-hover:shadow-orange-500/20">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-linear-to-br from-orange-500/20 to-transparent rounded-full blur-3xl group-hover:scale-150 transition-transform duration-500"></div>
+                <div className="relative">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-orange-500/30 to-amber-500/20 mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-3xl drop-shadow-lg">⭐</span>
+                  </div>
+                  <span className="inline-block text-xs font-bold text-orange-300 uppercase tracking-widest mb-3 bg-orange-500/20 px-3 py-1 rounded-full">01 Premium</span>
+                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-orange-300 transition-colors">Premium Quality</h3>
+                  <p className="text-gray-300 leading-relaxed mb-6">All doors manufactured with high-quality materials and expert craftsmanship standards that exceed industry expectations</p>
+                  <div className="flex items-center gap-2 text-orange-300 font-semibold text-sm group-hover:translate-x-1 transition-transform">
+                    <span>Learn more</span>
+                    <span>→</span>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Davis Shirtlift Products */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <div className="relative h-56 w-full bg-gray-200">
-                <Image
-                  src="/ingco/davis%20shirtlift%20products.jpeg"
-                  alt="Davis Shirtlift Products"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">Davis Shirtlift</h3>
-                <p className="text-gray-600 mb-4">Premium lifting and handling equipment for professional use</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-semibold">Professional Grade</span>
-                  <span className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-semibold">Heavy Duty</span>
+            {/* Card 2: Experience - Amber/Gold */}
+            <div className="group relative rounded-3xl p-0.5 overflow-hidden cursor-pointer">
+              <div className="absolute inset-0 bg-linear-to-br from-amber-500 via-yellow-500 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative bg-linear-to-br from-slate-900 via-amber-950/30 to-slate-900 backdrop-blur-xl rounded-3xl p-8 sm:p-10 h-full transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-2xl group-hover:shadow-amber-500/20">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-linear-to-br from-amber-500/20 to-transparent rounded-full blur-3xl group-hover:scale-150 transition-transform duration-500"></div>
+                <div className="relative">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-amber-500/30 to-yellow-500/20 mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-3xl drop-shadow-lg">🏆</span>
+                  </div>
+                  <span className="inline-block text-xs font-bold text-amber-300 uppercase tracking-widest mb-3 bg-amber-500/20 px-3 py-1 rounded-full">02 Expertise</span>
+                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-amber-300 transition-colors">15+ Years Experience</h3>
+                  <p className="text-gray-300 leading-relaxed mb-6">Trusted by thousands of satisfied customers across residential and commercial sectors with proven track record</p>
+                  <div className="flex items-center gap-2 text-amber-300 font-semibold text-sm group-hover:translate-x-1 transition-transform">
+                    <span>Learn more</span>
+                    <span>→</span>
+                  </div>
                 </div>
-                <a
-                  href="https://wa.me/254701761622"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2"
-                >
-                  <WhatsAppIcon />
-                  Order via WhatsApp
-                </a>
               </div>
             </div>
 
-            {/* Sanitary Wares Product */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <div className="relative h-56 w-full bg-gray-200">
-                <Image
-                  src="/ingco/sanitary%20wares.jpeg"
-                  alt="Sanitary Wares"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">Sanitary Wares</h3>
-                <p className="text-gray-600 mb-4">High-quality bathroom and kitchen sanitary fixtures</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-semibold">Premium Quality</span>
-                  <span className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-semibold">Durable</span>
+            {/* Card 3: Pricing - Yellow/Gold */}
+            <div className="group relative rounded-3xl p-0.5 overflow-hidden cursor-pointer">
+              <div className="absolute inset-0 bg-linear-to-br from-yellow-500 via-amber-500 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative bg-linear-to-br from-slate-900 via-yellow-950/30 to-slate-900 backdrop-blur-xl rounded-3xl p-8 sm:p-10 h-full transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-2xl group-hover:shadow-yellow-500/20">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-linear-to-br from-yellow-500/20 to-transparent rounded-full blur-3xl group-hover:scale-150 transition-transform duration-500"></div>
+                <div className="relative">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-yellow-500/30 to-amber-500/20 mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-3xl drop-shadow-lg">💰</span>
+                  </div>
+                  <span className="inline-block text-xs font-bold text-yellow-300 uppercase tracking-widest mb-3 bg-yellow-500/20 px-3 py-1 rounded-full">03 Savings</span>
+                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-yellow-300 transition-colors">Best Pricing</h3>
+                  <p className="text-gray-300 leading-relaxed mb-6">Best prices in the market without ever compromising on quality and durability of our premium products</p>
+                  <div className="flex items-center gap-2 text-yellow-300 font-semibold text-sm group-hover:translate-x-1 transition-transform">
+                    <span>Learn more</span>
+                    <span>→</span>
+                  </div>
                 </div>
-                <a
-                  href="https://wa.me/254701761622"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2"
-                >
-                  <WhatsAppIcon />
-                  Order via WhatsApp
-                </a>
+              </div>
+            </div>
+
+            {/* Card 4: Customization - Rose/Pink */}
+            <div className="group relative rounded-3xl p-0.5 overflow-hidden cursor-pointer">
+              <div className="absolute inset-0 bg-linear-to-br from-rose-500 via-pink-500 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative bg-linear-to-br from-slate-900 via-rose-950/30 to-slate-900 backdrop-blur-xl rounded-3xl p-8 sm:p-10 h-full transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-2xl group-hover:shadow-rose-500/20">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-linear-to-br from-rose-500/20 to-transparent rounded-full blur-3xl group-hover:scale-150 transition-transform duration-500"></div>
+                <div className="relative">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-rose-500/30 to-pink-500/20 mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-3xl drop-shadow-lg">🎯</span>
+                  </div>
+                  <span className="inline-block text-xs font-bold text-rose-300 uppercase tracking-widest mb-3 bg-rose-500/20 px-3 py-1 rounded-full">04 Custom</span>
+                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-rose-300 transition-colors">Custom Solutions</h3>
+                  <p className="text-gray-300 leading-relaxed mb-6">Tailored door solutions perfectly designed to meet your specific requirements and preferences</p>
+                  <div className="flex items-center gap-2 text-rose-300 font-semibold text-sm group-hover:translate-x-1 transition-transform">
+                    <span>Learn more</span>
+                    <span>→</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 5: Delivery - Cyan/Teal */}
+            <div className="group relative rounded-3xl p-0.5 overflow-hidden cursor-pointer">
+              <div className="absolute inset-0 bg-linear-to-br from-cyan-500 via-teal-500 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative bg-linear-to-br from-slate-900 via-cyan-950/30 to-slate-900 backdrop-blur-xl rounded-3xl p-8 sm:p-10 h-full transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-2xl group-hover:shadow-cyan-500/20">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-linear-to-br from-cyan-500/20 to-transparent rounded-full blur-3xl group-hover:scale-150 transition-transform duration-500"></div>
+                <div className="relative">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-cyan-500/30 to-teal-500/20 mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-3xl drop-shadow-lg">🚚</span>
+                  </div>
+                  <span className="inline-block text-xs font-bold text-cyan-300 uppercase tracking-widest mb-3 bg-cyan-500/20 px-3 py-1 rounded-full">05 Speed</span>
+                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-cyan-300 transition-colors">Fast Delivery</h3>
+                  <p className="text-gray-300 leading-relaxed mb-6">Quick nationwide shipping with reliable real-time delivery tracking and proactive customer updates</p>
+                  <div className="flex items-center gap-2 text-cyan-300 font-semibold text-sm group-hover:translate-x-1 transition-transform">
+                    <span>Learn more</span>
+                    <span>→</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 6: Support - Violet/Purple */}
+            <div className="group relative rounded-3xl p-0.5 overflow-hidden cursor-pointer">
+              <div className="absolute inset-0 bg-linear-to-br from-violet-500 via-purple-500 to-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative bg-linear-to-br from-slate-900 via-violet-950/30 to-slate-900 backdrop-blur-xl rounded-3xl p-8 sm:p-10 h-full transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-2xl group-hover:shadow-violet-500/20">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-linear-to-br from-violet-500/20 to-transparent rounded-full blur-3xl group-hover:scale-150 transition-transform duration-500"></div>
+                <div className="relative">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-violet-500/30 to-purple-500/20 mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-3xl drop-shadow-lg">📞</span>
+                  </div>
+                  <span className="inline-block text-xs font-bold text-violet-300 uppercase tracking-widest mb-3 bg-violet-500/20 px-3 py-1 rounded-full">06 Support</span>
+                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-violet-300 transition-colors">24/7 Expert Support</h3>
+                  <p className="text-gray-300 leading-relaxed mb-6">Round-the-clock professional customer support and technical assistance available whenever you need us</p>
+                  <div className="flex items-center gap-2 text-violet-300 font-semibold text-sm group-hover:translate-x-1 transition-transform">
+                    <span>Learn more</span>
+                    <span>→</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="text-center">
-            <div className="relative group">
-              <button
-                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-colors text-sm sm:text-lg"
-              >
-                View All Products
-                <ChevronDown size={20} className={`transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`} />
-              </button>
+          {/* Bottom Trust Badges */}
+          <div className="mt-16 pt-12 border-t border-white/10">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+              <div className="p-4">
+                <div className="text-3xl font-bold text-orange-400 mb-2">500+</div>
+                <p className="text-gray-300 text-sm">Happy Customers</p>
+              </div>
+              <div className="p-4">
+                <div className="text-3xl font-bold text-amber-400 mb-2">15+</div>
+                <p className="text-gray-300 text-sm">Years in Industry</p>
+              </div>
+              <div className="p-4">
+                <div className="text-3xl font-bold text-yellow-400 mb-2">100%</div>
+                <p className="text-gray-300 text-sm">Quality Guarantee</p>
+              </div>
+              <div className="p-4">
+                <div className="text-3xl font-bold text-orange-300 mb-2">24/7</div>
+                <p className="text-gray-300 text-sm">Customer Support</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              {/* Dropdown Menu */}
-              {isDropdownOpen && (
-                <div className="absolute top-full mt-2 w-64 bg-white text-slate-900 rounded-lg shadow-2xl z-50 overflow-hidden">
-                  <div className="max-h-96 overflow-y-auto">
-                    {categories.map((category, index) => (
-                      <a
-                        key={index}
-                        href="https://wa.me/254701761622"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block px-4 py-3 hover:bg-orange-50 transition-colors border-b border-gray-100 text-sm font-medium last:border-b-0"
-                        onClick={() => setIsDropdownOpen(false)}
-                      >
-                        {category.name}
-                      </a>
-                    ))}
+      {/* Featured Services Section */}
+      <section className="relative py-20 sm:py-28 md:py-36 overflow-hidden">
+        {/* Premium Gradient Background */}
+        <div className="absolute inset-0 bg-linear-to-br from-slate-950 via-slate-900 to-slate-800"></div>
+        
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-40 left-1/4 w-96 h-96 bg-orange-500 rounded-full blur-3xl opacity-20 animate-pulse"></div>
+          <div className="absolute top-1/3 -right-32 w-80 h-80 bg-red-500 rounded-full blur-3xl opacity-15 animate-pulse" style={{animationDelay: '0.5s'}}></div>
+          <div className="absolute bottom-20 left-1/3 w-72 h-72 bg-amber-500 rounded-full blur-3xl opacity-10 animate-pulse" style={{animationDelay: '1s'}}></div>
+          <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent"></div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* Section Header */}
+          <div className="text-center mb-16 sm:mb-20">
+            <div className="inline-block mb-6 px-6 py-2.5 bg-orange-500/20 rounded-full border border-orange-400/60 backdrop-blur-md">
+              <p className="text-orange-200 text-xs sm:text-sm font-bold tracking-widest uppercase drop-shadow-lg">Professional Excellence</p>
+            </div>
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 tracking-tight text-white drop-shadow-lg">
+              Our <span className="bg-linear-to-r from-orange-400 via-red-400 to-pink-400 bg-clip-text text-transparent">Premium Services</span>
+            </h2>
+            <div className="h-1 w-24 bg-linear-to-r from-orange-500 via-red-500 to-pink-500 mx-auto mb-6 rounded-full"></div>
+            <p className="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed drop-shadow-md">
+              Complete solutions from manufacturing and installation to consultation and maintenance – delivered with excellence and precision
+            </p>
+          </div>
+
+          {/* Services Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12">
+            {/* Doors Manufacturing */}
+            <div className="group relative rounded-2xl p-0.5 overflow-hidden cursor-pointer h-full">
+              <div className="absolute inset-0 bg-linear-to-br from-blue-500 via-cyan-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative bg-linear-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-xl rounded-2xl p-8 h-full transition-all duration-500 group-hover:-translate-y-3 group-hover:shadow-2xl border border-slate-700/50 group-hover:border-blue-500/50">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl group-hover:scale-150 transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
+                
+                <div className="relative">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-blue-500 to-cyan-500 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-2xl">
+                    <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11z"/></svg>
                   </div>
-                  <a
-                    href="https://wa.me/254701761622"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block px-4 py-3 bg-orange-100 text-orange-700 font-semibold text-center hover:bg-orange-200 transition-colors text-sm"
-                    onClick={() => setIsDropdownOpen(false)}
-                  >
-                    View All Categories
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-blue-400 group-hover:to-cyan-400 group-hover:bg-clip-text transition-all duration-300">Doors Manufacturing</h3>
+                  <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">Premium custom-manufactured doors tailored to your specifications with expert craftsmanship and finest materials</p>
+                  <ul className="space-y-3 text-sm text-gray-300 mb-8">
+                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-blue-400 to-cyan-400 rounded-full"></span><span>Premium quality materials</span></li>
+                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-blue-400 to-cyan-400 rounded-full"></span><span>Expert craftsmanship</span></li>
+                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-blue-400 to-cyan-400 rounded-full"></span><span>Custom designs</span></li>
+                  </ul>
+                  <a href="/services" className="inline-flex items-center gap-2 text-blue-400 font-semibold hover:text-blue-300 text-sm group/link transition-colors">
+                    Learn More
+                    <span className="transform group-hover/link:translate-x-1 transition-transform">→</span>
                   </a>
                 </div>
-              )}
+              </div>
+            </div>
+
+            {/* Professional Installation */}
+            <div className="group relative rounded-2xl p-0.5 overflow-hidden cursor-pointer h-full">
+              <div className="absolute inset-0 bg-linear-to-br from-amber-500 via-yellow-500 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative bg-linear-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-xl rounded-2xl p-8 h-full transition-all duration-500 group-hover:-translate-y-3 group-hover:shadow-2xl border border-slate-700/50 group-hover:border-amber-500/50">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl group-hover:scale-150 transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
+                
+                <div className="relative">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-amber-500 to-yellow-500 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-2xl">
+                    <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5.04-6.71l-2.75 3.54h2.5v2.17h2.58v-2.17h2.5z"/></svg>
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-amber-400 group-hover:to-yellow-400 group-hover:bg-clip-text transition-all duration-300">Professional Installation</h3>
+                  <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">Expert installation services by licensed technicians for residential and commercial properties</p>
+                  <ul className="space-y-3 text-sm text-gray-300 mb-8">
+                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-amber-400 to-yellow-400 rounded-full"></span><span>Licensed professionals</span></li>
+                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-amber-400 to-yellow-400 rounded-full"></span><span>Rapid service delivery</span></li>
+                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-amber-400 to-yellow-400 rounded-full"></span><span>Quality guarantee</span></li>
+                  </ul>
+                  <a href="/services" className="inline-flex items-center gap-2 text-amber-400 font-semibold hover:text-amber-300 text-sm group/link transition-colors">
+                    Learn More
+                    <span className="transform group-hover/link:translate-x-1 transition-transform">→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Design Consultation */}
+            <div className="group relative rounded-2xl p-0.5 overflow-hidden cursor-pointer h-full">
+              <div className="absolute inset-0 bg-linear-to-br from-purple-500 via-pink-500 to-red-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative bg-linear-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-xl rounded-2xl p-8 h-full transition-all duration-500 group-hover:-translate-y-3 group-hover:shadow-2xl border border-slate-700/50 group-hover:border-purple-500/50">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500/10 rounded-full blur-3xl group-hover:scale-150 transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
+                
+                <div className="relative">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-purple-500 to-pink-500 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-2xl">
+                    <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">Design Consultation</h3>
+                  <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">Professional design consultation for optimal door selection and strategic placement solutions</p>
+                  <ul className="space-y-3 text-sm text-gray-300 mb-8">
+                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-purple-400 to-pink-400 rounded-full"></span><span>Expert recommendations</span></li>
+                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-purple-400 to-pink-400 rounded-full"></span><span>Custom solutions</span></li>
+                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-purple-400 to-pink-400 rounded-full"></span><span>Technical support</span></li>
+                  </ul>
+                  <a href="/services" className="inline-flex items-center gap-2 text-purple-400 font-semibold hover:text-purple-300 text-sm group/link transition-colors">
+                    Learn More
+                    <span className="transform group-hover/link:translate-x-1 transition-transform">→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Bulk Supply */}
+            <div className="group relative rounded-2xl p-0.5 overflow-hidden cursor-pointer h-full">
+              <div className="absolute inset-0 bg-linear-to-br from-green-500 via-emerald-500 to-teal-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative bg-linear-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-xl rounded-2xl p-8 h-full transition-all duration-500 group-hover:-translate-y-3 group-hover:shadow-2xl border border-slate-700/50 group-hover:border-green-500/50">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/10 rounded-full blur-3xl group-hover:scale-150 transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
+                
+                <div className="relative">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-green-500 to-emerald-500 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-2xl">
+                    <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-green-400 group-hover:to-emerald-400 group-hover:bg-clip-text transition-all duration-300">Bulk Supply</h3>
+                  <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">Wholesale doors and hardware supply for contractors and resellers with competitive pricing</p>
+                  <ul className="space-y-3 text-sm text-gray-300 mb-8">
+                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-green-400 to-emerald-400 rounded-full"></span><span>Best pricing</span></li>
+                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-green-400 to-emerald-400 rounded-full"></span><span>Large quantities</span></li>
+                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-green-400 to-emerald-400 rounded-full"></span><span>Flexible terms</span></li>
+                  </ul>
+                  <a href="/services" className="inline-flex items-center gap-2 text-green-400 font-semibold hover:text-green-300 text-sm group/link transition-colors">
+                    Learn More
+                    <span className="transform group-hover/link:translate-x-1 transition-transform">→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* 24/7 Customer Support */}
+            <div className="group relative rounded-2xl p-0.5 overflow-hidden cursor-pointer h-full">
+              <div className="absolute inset-0 bg-linear-to-br from-red-500 via-rose-500 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative bg-linear-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-xl rounded-2xl p-8 h-full transition-all duration-500 group-hover:-translate-y-3 group-hover:shadow-2xl border border-slate-700/50 group-hover:border-red-500/50">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-red-500/10 rounded-full blur-3xl group-hover:scale-150 transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
+                
+                <div className="relative">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-red-500 to-rose-500 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-2xl">
+                    <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-red-400 group-hover:to-rose-400 group-hover:bg-clip-text transition-all duration-300">24/7 Support</h3>
+                  <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">Round-the-clock support for all inquiries and service needs through multiple communication channels</p>
+                  <ul className="space-y-3 text-sm text-gray-300 mb-8">
+                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-red-400 to-rose-400 rounded-full"></span><span>Always available</span></li>
+                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-red-400 to-rose-400 rounded-full"></span><span>Rapid response</span></li>
+                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-red-400 to-rose-400 rounded-full"></span><span>Multi-channel support</span></li>
+                  </ul>
+                  <a href="/services" className="inline-flex items-center gap-2 text-red-400 font-semibold hover:text-red-300 text-sm group/link transition-colors">
+                    Learn More
+                    <span className="transform group-hover/link:translate-x-1 transition-transform">→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA Button */}
+          <div className="text-center">
+            <div className="inline-block">
+              <a
+                href="/services"
+                className="inline-flex items-center justify-center gap-3 bg-linear-to-r from-orange-500 via-red-500 to-pink-500 hover:from-orange-600 hover:via-red-600 hover:to-pink-600 text-white px-8 sm:px-14 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-110 shadow-2xl hover:shadow-3xl relative group overflow-hidden"
+              >
+                <span className="relative z-10 flex items-center gap-3 drop-shadow-lg">
+                  View All Services
+                  <ArrowRight size={22} className="group-hover:translate-x-1 transition-transform" />
+                </span>
+                <div className="absolute inset-0 bg-linear-to-r from-orange-600 via-red-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </a>
             </div>
           </div>
         </div>
@@ -573,6 +919,19 @@ export default function Home() {
       </section>
 
       <Footer />
+
+      {/* Sticky WhatsApp Button */}
+      <a
+        href="https://wa.me/254708932609"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 left-6 bg-linear-to-br from-green-400 to-green-600 hover:from-green-500 hover:to-green-700 text-white rounded-full px-5 py-4 shadow-lg hover:shadow-2xl hover:shadow-green-500/50 transition-all duration-300 flex items-center justify-center gap-3 font-semibold hover:scale-110 z-40"
+        aria-label="Chat with us on WhatsApp"
+        title="Chat with us on WhatsApp"
+      >
+        <WhatsAppIcon />
+        <span className="text-sm font-bold">Chat Us</span>
+      </a>
     </>
   );
 }

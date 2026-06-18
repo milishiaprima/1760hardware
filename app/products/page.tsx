@@ -297,7 +297,7 @@ export default function Products() {
                               ))}
                             </ul>
                             <a
-                              href="https://wa.me/254701761622"
+                              href="https://wa.me/254708932609"
                               target="_blank"
                               rel="noopener noreferrer"
                               className="w-full bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded text-sm font-semibold transition-colors flex items-center justify-center gap-2"

@@ -12,7 +12,7 @@ from db.models import AdminUser
 
 router = APIRouter(prefix="/api/auth", tags=["auth"])
 
-SECRET_KEY = os.getenv("SECRET_KEY", "junior-hardware-secret-key-2026")
+SECRET_KEY = os.getenv("SECRET_KEY", "1760-hardware-secret-key-2026")
 ALGORITHM = "HS256"
 TOKEN_EXPIRE_HOURS = 24
 
