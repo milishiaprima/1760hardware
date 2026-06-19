@@ -54,13 +54,13 @@ export default function RevenueChart() {
         },
         ticks: {
           color: '#64748B',
-          font: {
-            size: 12,
-          },
           callback: (value: any) => {
             if (value >= 1000000) return (value / 1000000).toFixed(0) + 'M';
             if (value >= 1000) return (value / 1000).toFixed(0) + 'K';
             return value;
+          },
+          font: {
+            size: 12,
           },
         },
       },
