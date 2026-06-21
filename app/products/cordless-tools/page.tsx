@@ -307,7 +307,7 @@ export default function CordlessTools() {
                     className="w-full bg-green-500 hover:bg-green-600 active:bg-green-700 text-white px-3 sm:px-4 py-2 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2 text-xs sm:text-sm"
                   >
                     <WhatsAppIcon />
-                    Order via WhatsApp
+                    Ask Price
                   </a>
                 </div>
               </div>

@@ -268,7 +268,6 @@ export default function Generators() {
 
                 {/* Price and CTA */}
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between border-t border-gray-200 pt-3 sm:pt-4 gap-2 sm:gap-3">
-                  <p className="font-semibold text-gray-800 text-xs sm:text-sm">{generator.price}</p>
                   <a
                     href={`https://wa.me/?text=I'm interested in ${generator.name} (${generator.model})`}
                     target="_blank"
@@ -276,7 +275,7 @@ export default function Generators() {
                     className="inline-flex items-center gap-1.5 sm:gap-2 bg-green-500 hover:bg-green-600 active:bg-green-700 text-white px-3 sm:px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm font-semibold whitespace-nowrap shrink-0"
                   >
                     <WhatsAppIcon />
-                    Get Quote
+                    Ask Price
                   </a>
                 </div>
               </div>

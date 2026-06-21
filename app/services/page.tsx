@@ -145,18 +145,18 @@ export default function Services() {
 
                   {/* Content */}
                   <div className="p-6">
-                    <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-3 group-hover:text-orange-600 transition-colors">
+                    <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-3 group-hover:text-orange-600 transition-colors text-center md:text-left">
                       {service.title}
                     </h3>
-                    <p className="text-gray-600 text-sm sm:text-base mb-5 leading-relaxed">
+                    <p className="text-gray-600 text-sm sm:text-base mb-5 leading-relaxed text-center md:text-left">
                       {service.description}
                     </p>
 
                     {/* Details */}
                     <div className="space-y-2 pt-4 border-t border-gray-100">
                       {service.details.map((detail, i) => (
-                        <div key={i} className="flex items-start gap-2">
-                          <CheckCircle size={16} className="text-orange-500 shrink-0 mt-0.5" />
+                        <div key={i} className="flex items-center justify-center md:justify-start gap-2">
+                          <CheckCircle size={16} className="text-orange-500 shrink-0" />
                           <span className="text-sm text-gray-600">{detail}</span>
                         </div>
                       ))}

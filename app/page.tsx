@@ -28,6 +28,7 @@ export default function Home() {
     '/doors/machine.jpg',
     '/doors/saw machine.jpg',
     '/doors/hardware.jpg',
+    '/doors/car%20supply.jpeg',
     '/doors/home door.jpg',
     '/doors/doors interior.jpg',
     '/doors/1760.jpg',
@@ -94,12 +95,12 @@ export default function Home() {
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
                 <a
-                  href="https://wa.me/254708932609"
+                  href="https://wa.me/254708932609?text=Hi,%20I%20am%20interested%20in%20ordering%20bulky%20doors.%20Please%20tell%20me%20about%20the%20discount%20and%20free%20transportation%20offer"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-colors text-sm sm:text-base w-full sm:w-auto"
                 >
-                  Order Now
+                  Order Bulky Doors - Get Discount & Free Transport
                   <ArrowRight size={18} className="hidden sm:block" />
                 </a>
                 <a
@@ -171,7 +172,7 @@ export default function Home() {
           {/* Section Header */}
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-              Featured <span className="text-orange-500">Door Products</span>
+              Explore our <span className="text-orange-500">Products</span>
             </h2>
             <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
               Explore our premium collection of doors designed for quality and durability
@@ -312,6 +313,50 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Product 4: Bulk Door Delivery */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+              {/* Product Image */}
+              <div className="relative h-60 sm:h-64 overflow-hidden bg-gray-200">
+                <Image
+                  src="/doors/car%20supply.jpeg"
+                  alt="Bulk Door Delivery"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+
+              {/* Product Info */}
+              <div className="p-5 sm:p-6">
+                {/* Product Name */}
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-2">
+                  Bulk Door Delivery
+                </h3>
+
+                {/* Description */}
+                <p className="text-gray-600 text-sm mb-4">
+                  Fast and reliable bulk delivery service for large door orders. We ensure safe transport of your doors to any location.
+                </p>
+
+                {/* Feature Tags */}
+                <div className="flex flex-wrap gap-2 mb-5">
+                  <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-semibold">Fast Delivery</span>
+                  <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-semibold">Bulk Orders</span>
+                  <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-semibold">Reliable</span>
+                </div>
+
+                {/* CTA Button */}
+                <a
+                  href="https://wa.me/254708932609?text=Hi,%20I%20am%20interested%20in%20bulk%20door%20delivery%20services"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-lg font-semibold transition-colors text-sm"
+                >
+                  <WhatsAppIcon />
+                  Order via WhatsApp
+                </a>
+              </div>
+            </div>
+
 
           </div>
         </div>
@@ -389,7 +434,7 @@ export default function Home() {
 
 
 
-            {/* Glass Doors - Cyan/Blue */}
+            {/* Aluminium Doors - Cyan/Blue */}
             <div className="group relative rounded-3xl p-0.5 overflow-hidden cursor-pointer h-full">
               <div className="absolute inset-0 bg-linear-to-br from-cyan-500 via-sky-500 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative bg-linear-to-br from-slate-900 via-cyan-950/30 to-slate-900 backdrop-blur-xl rounded-3xl overflow-hidden h-full flex flex-col transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-2xl group-hover:shadow-cyan-500/20">
@@ -402,8 +447,8 @@ export default function Home() {
                 
                 <div className="relative p-6 flex flex-col grow">
                   <span className="inline-block w-fit text-xs font-bold text-cyan-300 uppercase tracking-widest mb-3 bg-cyan-500/20 px-3 py-1 rounded-full">03 Modern</span>
-                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors">Glass Doors</h3>
-                  <p className="text-gray-300 leading-relaxed text-sm mb-6 grow">Modern glass doors for contemporary designs and enhanced natural light flow</p>
+                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors">Aluminium Doors</h3>
+                  <p className="text-gray-300 leading-relaxed text-sm mb-6 grow">Premium aluminium doors for modern aesthetics and durability</p>
                   <a href="/products/wooden-doors" className="inline-flex items-center gap-2 text-cyan-300 font-semibold hover:text-cyan-200 text-sm group/link mt-auto">
                     <span>Learn more</span>
                     <span className="transform group-hover/link:translate-x-1 transition-transform">→</span>
@@ -667,17 +712,17 @@ export default function Home() {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl group-hover:scale-150 transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
                 
                 <div className="relative">
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-blue-500 to-cyan-500 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-2xl">
+                  <div className="inline-flex items-center justify-center sm:justify-start w-full sm:w-auto w-16 h-16 rounded-2xl bg-linear-to-br from-blue-500 to-cyan-500 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-2xl">
                     <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11z"/></svg>
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-blue-400 group-hover:to-cyan-400 group-hover:bg-clip-text transition-all duration-300">Doors Manufacturing</h3>
-                  <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">Premium custom-manufactured doors tailored to your specifications with expert craftsmanship and finest materials</p>
-                  <ul className="space-y-3 text-sm text-gray-300 mb-8">
-                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-blue-400 to-cyan-400 rounded-full"></span><span>Premium quality materials</span></li>
-                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-blue-400 to-cyan-400 rounded-full"></span><span>Expert craftsmanship</span></li>
-                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-blue-400 to-cyan-400 rounded-full"></span><span>Custom designs</span></li>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-blue-400 group-hover:to-cyan-400 group-hover:bg-clip-text transition-all duration-300 text-center sm:text-left">Doors Manufacturing</h3>
+                  <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base text-center sm:text-left">Premium custom-manufactured doors tailored to your specifications with expert craftsmanship and finest materials</p>
+                  <ul className="space-y-3 text-sm text-gray-300 mb-8 text-center sm:text-left">
+                    <li className="flex items-center justify-center sm:justify-start gap-3"><span className="w-2 h-2 bg-linear-to-r from-blue-400 to-cyan-400 rounded-full"></span><span>Premium quality materials</span></li>
+                    <li className="flex items-center justify-center sm:justify-start gap-3"><span className="w-2 h-2 bg-linear-to-r from-blue-400 to-cyan-400 rounded-full"></span><span>Expert craftsmanship</span></li>
+                    <li className="flex items-center justify-center sm:justify-start gap-3"><span className="w-2 h-2 bg-linear-to-r from-blue-400 to-cyan-400 rounded-full"></span><span>Custom designs</span></li>
                   </ul>
-                  <a href="/services" className="inline-flex items-center gap-2 text-blue-400 font-semibold hover:text-blue-300 text-sm group/link transition-colors">
+                  <a href="/services" className="inline-flex items-center gap-2 text-blue-400 font-semibold hover:text-blue-300 text-sm group/link transition-colors justify-center sm:justify-start w-full sm:w-auto">
                     Learn More
                     <span className="transform group-hover/link:translate-x-1 transition-transform">→</span>
                   </a>
@@ -692,17 +737,17 @@ export default function Home() {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl group-hover:scale-150 transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
                 
                 <div className="relative">
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-amber-500 to-yellow-500 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-2xl">
+                  <div className="inline-flex items-center justify-center sm:justify-start w-full sm:w-auto w-16 h-16 rounded-2xl bg-linear-to-br from-amber-500 to-yellow-500 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-2xl">
                     <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5.04-6.71l-2.75 3.54h2.5v2.17h2.58v-2.17h2.5z"/></svg>
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-amber-400 group-hover:to-yellow-400 group-hover:bg-clip-text transition-all duration-300">Professional Installation</h3>
-                  <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">Expert installation services by licensed technicians for residential and commercial properties</p>
-                  <ul className="space-y-3 text-sm text-gray-300 mb-8">
-                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-amber-400 to-yellow-400 rounded-full"></span><span>Licensed professionals</span></li>
-                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-amber-400 to-yellow-400 rounded-full"></span><span>Rapid service delivery</span></li>
-                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-amber-400 to-yellow-400 rounded-full"></span><span>Quality guarantee</span></li>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-amber-400 group-hover:to-yellow-400 group-hover:bg-clip-text transition-all duration-300 text-center sm:text-left">Professional Installation</h3>
+                  <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base text-center sm:text-left">Expert installation services by licensed technicians for residential and commercial properties</p>
+                  <ul className="space-y-3 text-sm text-gray-300 mb-8 text-center sm:text-left">
+                    <li className="flex items-center justify-center sm:justify-start gap-3"><span className="w-2 h-2 bg-linear-to-r from-amber-400 to-yellow-400 rounded-full"></span><span>Licensed professionals</span></li>
+                    <li className="flex items-center justify-center sm:justify-start gap-3"><span className="w-2 h-2 bg-linear-to-r from-amber-400 to-yellow-400 rounded-full"></span><span>Rapid service delivery</span></li>
+                    <li className="flex items-center justify-center sm:justify-start gap-3"><span className="w-2 h-2 bg-linear-to-r from-amber-400 to-yellow-400 rounded-full"></span><span>Quality guarantee</span></li>
                   </ul>
-                  <a href="/services" className="inline-flex items-center gap-2 text-amber-400 font-semibold hover:text-amber-300 text-sm group/link transition-colors">
+                  <a href="/services" className="inline-flex items-center gap-2 text-amber-400 font-semibold hover:text-amber-300 text-sm group/link transition-colors justify-center sm:justify-start w-full sm:w-auto">
                     Learn More
                     <span className="transform group-hover/link:translate-x-1 transition-transform">→</span>
                   </a>
@@ -717,17 +762,17 @@ export default function Home() {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500/10 rounded-full blur-3xl group-hover:scale-150 transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
                 
                 <div className="relative">
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-purple-500 to-pink-500 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-2xl">
+                  <div className="inline-flex items-center justify-center sm:justify-start w-full sm:w-auto w-16 h-16 rounded-2xl bg-linear-to-br from-purple-500 to-pink-500 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-2xl">
                     <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">Design Consultation</h3>
-                  <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">Professional design consultation for optimal door selection and strategic placement solutions</p>
-                  <ul className="space-y-3 text-sm text-gray-300 mb-8">
-                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-purple-400 to-pink-400 rounded-full"></span><span>Expert recommendations</span></li>
-                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-purple-400 to-pink-400 rounded-full"></span><span>Custom solutions</span></li>
-                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-purple-400 to-pink-400 rounded-full"></span><span>Technical support</span></li>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300 text-center sm:text-left">Design Consultation</h3>
+                  <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base text-center sm:text-left">Professional design consultation for optimal door selection and strategic placement solutions</p>
+                  <ul className="space-y-3 text-sm text-gray-300 mb-8 text-center sm:text-left">
+                    <li className="flex items-center justify-center sm:justify-start gap-3"><span className="w-2 h-2 bg-linear-to-r from-purple-400 to-pink-400 rounded-full"></span><span>Expert recommendations</span></li>
+                    <li className="flex items-center justify-center sm:justify-start gap-3"><span className="w-2 h-2 bg-linear-to-r from-purple-400 to-pink-400 rounded-full"></span><span>Custom solutions</span></li>
+                    <li className="flex items-center justify-center sm:justify-start gap-3"><span className="w-2 h-2 bg-linear-to-r from-purple-400 to-pink-400 rounded-full"></span><span>Technical support</span></li>
                   </ul>
-                  <a href="/services" className="inline-flex items-center gap-2 text-purple-400 font-semibold hover:text-purple-300 text-sm group/link transition-colors">
+                  <a href="/services" className="inline-flex items-center gap-2 text-purple-400 font-semibold hover:text-purple-300 text-sm group/link transition-colors justify-center sm:justify-start w-full sm:w-auto">
                     Learn More
                     <span className="transform group-hover/link:translate-x-1 transition-transform">→</span>
                   </a>
@@ -742,17 +787,17 @@ export default function Home() {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/10 rounded-full blur-3xl group-hover:scale-150 transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
                 
                 <div className="relative">
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-green-500 to-emerald-500 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-2xl">
+                  <div className="inline-flex items-center justify-center sm:justify-start w-full sm:w-auto w-16 h-16 rounded-2xl bg-linear-to-br from-green-500 to-emerald-500 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-2xl">
                     <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-green-400 group-hover:to-emerald-400 group-hover:bg-clip-text transition-all duration-300">Bulk Supply</h3>
-                  <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">Wholesale doors and hardware supply for contractors and resellers with competitive pricing</p>
-                  <ul className="space-y-3 text-sm text-gray-300 mb-8">
-                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-green-400 to-emerald-400 rounded-full"></span><span>Best pricing</span></li>
-                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-green-400 to-emerald-400 rounded-full"></span><span>Large quantities</span></li>
-                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-green-400 to-emerald-400 rounded-full"></span><span>Flexible terms</span></li>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-green-400 group-hover:to-emerald-400 group-hover:bg-clip-text transition-all duration-300 text-center sm:text-left">Bulk Supply</h3>
+                  <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base text-center sm:text-left">Wholesale doors and hardware supply for contractors and resellers with competitive pricing</p>
+                  <ul className="space-y-3 text-sm text-gray-300 mb-8 text-center sm:text-left">
+                    <li className="flex items-center justify-center sm:justify-start gap-3"><span className="w-2 h-2 bg-linear-to-r from-green-400 to-emerald-400 rounded-full"></span><span>Best pricing</span></li>
+                    <li className="flex items-center justify-center sm:justify-start gap-3"><span className="w-2 h-2 bg-linear-to-r from-green-400 to-emerald-400 rounded-full"></span><span>Large quantities</span></li>
+                    <li className="flex items-center justify-center sm:justify-start gap-3"><span className="w-2 h-2 bg-linear-to-r from-green-400 to-emerald-400 rounded-full"></span><span>Flexible terms</span></li>
                   </ul>
-                  <a href="/services" className="inline-flex items-center gap-2 text-green-400 font-semibold hover:text-green-300 text-sm group/link transition-colors">
+                  <a href="/services" className="inline-flex items-center gap-2 text-green-400 font-semibold hover:text-green-300 text-sm group/link transition-colors justify-center sm:justify-start w-full sm:w-auto">
                     Learn More
                     <span className="transform group-hover/link:translate-x-1 transition-transform">→</span>
                   </a>
@@ -767,17 +812,17 @@ export default function Home() {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-red-500/10 rounded-full blur-3xl group-hover:scale-150 transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
                 
                 <div className="relative">
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-red-500 to-rose-500 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-2xl">
+                  <div className="inline-flex items-center justify-center sm:justify-start w-full sm:w-auto w-16 h-16 rounded-2xl bg-linear-to-br from-red-500 to-rose-500 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-2xl">
                     <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-red-400 group-hover:to-rose-400 group-hover:bg-clip-text transition-all duration-300">24/7 Support</h3>
-                  <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">Round-the-clock support for all inquiries and service needs through multiple communication channels</p>
-                  <ul className="space-y-3 text-sm text-gray-300 mb-8">
-                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-red-400 to-rose-400 rounded-full"></span><span>Always available</span></li>
-                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-red-400 to-rose-400 rounded-full"></span><span>Rapid response</span></li>
-                    <li className="flex items-center gap-3"><span className="w-2 h-2 bg-linear-to-r from-red-400 to-rose-400 rounded-full"></span><span>Multi-channel support</span></li>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-red-400 group-hover:to-rose-400 group-hover:bg-clip-text transition-all duration-300 text-center sm:text-left">24/7 Support</h3>
+                  <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base text-center sm:text-left">Round-the-clock support for all inquiries and service needs through multiple communication channels</p>
+                  <ul className="space-y-3 text-sm text-gray-300 mb-8 text-center sm:text-left">
+                    <li className="flex items-center justify-center sm:justify-start gap-3"><span className="w-2 h-2 bg-linear-to-r from-red-400 to-rose-400 rounded-full"></span><span>Always available</span></li>
+                    <li className="flex items-center justify-center sm:justify-start gap-3"><span className="w-2 h-2 bg-linear-to-r from-red-400 to-rose-400 rounded-full"></span><span>Rapid response</span></li>
+                    <li className="flex items-center justify-center sm:justify-start gap-3"><span className="w-2 h-2 bg-linear-to-r from-red-400 to-rose-400 rounded-full"></span><span>Multi-channel support</span></li>
                   </ul>
-                  <a href="/services" className="inline-flex items-center gap-2 text-red-400 font-semibold hover:text-red-300 text-sm group/link transition-colors">
+                  <a href="/services" className="inline-flex items-center gap-2 text-red-400 font-semibold hover:text-red-300 text-sm group/link transition-colors justify-center sm:justify-start w-full sm:w-auto">
                     Learn More
                     <span className="transform group-hover/link:translate-x-1 transition-transform">→</span>
                   </a>

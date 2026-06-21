@@ -440,11 +440,6 @@ export default function PowerTools() {
                   </ul>
                 </div>
 
-                {/* Price */}
-                <div className="px-4 py-3 bg-blue-50 border-t border-blue-100">
-                  <p className="text-lg font-bold text-orange-600">{product.price}</p>
-                </div>
-
                 {/* CTA */}
                 <div className="border-t bg-gray-50 p-4">
                   <a
@@ -454,7 +449,7 @@ export default function PowerTools() {
                     className="w-full bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2 text-sm"
                   >
                     <WhatsAppIcon />
-                    Order via WhatsApp
+                    Ask Price
                   </a>
                 </div>
               </div>

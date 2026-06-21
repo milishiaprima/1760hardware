@@ -114,9 +114,9 @@ export default function ContactUs() {
                         <div className={`inline-flex items-center justify-center w-14 h-14 rounded-xl bg-linear-to-br ${method.color} text-white mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                           <Icon size={28} />
                         </div>
-                        <h3 className="text-xl font-bold text-slate-900 mb-2">{method.title}</h3>
-                        <p className="text-gray-600 text-sm mb-3">{method.description}</p>
-                        <p className="text-lg font-semibold text-slate-900 group-hover:text-red-600 transition-colors">{method.details}</p>
+                        <h3 className="text-xl font-bold text-slate-900 mb-2 text-center sm:text-left">{method.title}</h3>
+                        <p className="text-gray-600 text-sm mb-3 text-center sm:text-left">{method.description}</p>
+                        <p className="text-lg font-semibold text-slate-900 group-hover:text-red-600 transition-colors text-center sm:text-left">{method.details}</p>
                       </div>
                     </div>
                   </div>

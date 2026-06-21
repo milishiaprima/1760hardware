@@ -124,19 +124,15 @@ export default function WoodenSteelDoors() {
                       ))}
                     </div>
 
-                    {/* Price and CTA */}
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <p className="text-sm text-gray-500">Starting from</p>
-                        <p className="text-2xl font-bold text-orange-600">{product.price}</p>
-                      </div>
+                    {/* CTA */}
+                    <div className="flex items-center justify-center">
                       <a
                         href="https://wa.me/254708932609"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg font-semibold transition-colors"
+                        className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg font-semibold transition-colors w-full text-center"
                       >
-                        Order
+                        Ask Price
                       </a>
                     </div>
                   </div>

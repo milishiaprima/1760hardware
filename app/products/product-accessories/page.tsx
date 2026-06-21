@@ -413,9 +413,6 @@ export default function ProductAccessories() {
                     ))}
                   </ul>
 
-                  {/* Price */}
-                  <p className="text-base sm:text-lg font-bold text-orange-600 mb-3 sm:mb-4">{product.price}</p>
-
                   {/* CTA Button */}
                   <a
                     href="https://wa.me/254708932609?text=Hi,%20I%20am%20interested%20in%20the%20product%20accessory"
@@ -424,7 +421,7 @@ export default function ProductAccessories() {
                     className="flex items-center justify-center w-full bg-green-500 hover:bg-green-600 active:bg-green-700 text-white font-semibold py-2 px-3 sm:px-4 rounded-lg transition-colors duration-300 text-xs sm:text-sm gap-1.5"
                   >
                     <WhatsAppIcon />
-                    <span>Order on WhatsApp</span>
+                    <span>Ask Price</span>
                   </a>
                 </div>
               </div>

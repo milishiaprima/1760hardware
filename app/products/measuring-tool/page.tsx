@@ -727,11 +727,6 @@ export default function MeasuringTools() {
 
                 {/* Price and CTA */}
                 <div className="border-t bg-gray-50 p-2.5 sm:p-4">
-                  <div className="mb-2 sm:mb-3">
-                    <p className="text-sm sm:text-base font-bold text-slate-900">
-                      {product.price}
-                    </p>
-                  </div>
                   <a
                     href="https://wa.me/254708932609"
                     target="_blank"
@@ -739,7 +734,7 @@ export default function MeasuringTools() {
                     className="w-full px-3 sm:px-4 py-2 text-xs sm:text-sm bg-green-500 hover:bg-green-600 text-white font-bold rounded transition-colors flex items-center justify-center gap-1.5"
                   >
                     <WhatsAppIcon />
-                    Chat on WhatsApp
+                    Ask Price
                   </a>
                 </div>
               </div>
