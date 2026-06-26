@@ -231,7 +231,7 @@ export default function Home() {
               <div className="relative h-60 sm:h-64 overflow-hidden bg-gray-200">
                 <Image
                   src="/doors/machine.jpg"
-                  alt="Processing Machines"
+                  alt="Lipping Machine"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -241,12 +241,12 @@ export default function Home() {
               <div className="p-5 sm:p-6">
                 {/* Product Name */}
                 <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-2">
-                  Processing Machines
+                  Lipping Machine
                 </h3>
 
                 {/* Description */}
                 <p className="text-gray-600 text-sm mb-4">
-                  Advanced machines used to process high-quality doors. Ensuring precision and durability in every product we manufacture.
+                  Lipping machine for commercial wardrobes and bespoke kitchen cabinets, delivering precise edge finishing for premium joinery.
                 </p>
 
                 {/* Feature Tags */}
@@ -258,13 +258,11 @@ export default function Home() {
 
                 {/* CTA Button */}
                 <a
-                  href="https://wa.me/254708932609?text=Hi,%20I%20am%20interested%20in%20learning%20more%20about%20your%20processing%20machines"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-lg font-semibold transition-colors text-sm"
+                  href="/products/air-tools"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-4 py-3 rounded-lg font-semibold transition-colors text-sm"
                 >
-                  <WhatsAppIcon />
-                  Order via WhatsApp
+                  <ArrowRight size={18} />
+                  Explore
                 </a>
               </div>
             </div>
@@ -357,6 +355,40 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Team Card: Explore the Team */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+              <div className="relative h-60 sm:h-64 overflow-hidden bg-gray-200">
+                <Image
+                  src="/doors/team.jpeg"
+                  alt="1760 Hardware team"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+
+              <div className="p-5 sm:p-6">
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-2">
+                  Meet Our Team
+                </h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  Skilled installers, project managers, and service experts ready to support your doors and finishes from start to finish.
+                </p>
+
+                <div className="flex flex-wrap gap-2 mb-5">
+                  <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-semibold">Experienced</span>
+                  <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-semibold">Reliable</span>
+                  <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-semibold">Customer-first</span>
+                </div>
+
+                <a
+                  href="/services"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-4 py-3 rounded-lg font-semibold transition-colors text-sm"
+                >
+                  Explore the Team
+                  <ArrowRight size={18} />
+                </a>
+              </div>
+            </div>
 
           </div>
         </div>

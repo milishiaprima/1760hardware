@@ -168,6 +168,44 @@ export default function Services() {
           </div>
         </section>
 
+        {/* Team Showcase Section */}
+        <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-linear-to-br from-slate-950 via-slate-900 to-slate-900 text-white">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-sm uppercase tracking-[0.3em] text-orange-400 mb-4">Meet our team</p>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6">A Skilled Team Behind Every Door Project</h2>
+              <p className="text-gray-200 text-lg leading-relaxed mb-6">
+                Our team brings expert craftsmanship, installation mastery, and customer-first service to every door solution. We work closely with you from design to delivery to ensure a seamless experience.
+              </p>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 text-orange-400">•</span>
+                  <span className="text-gray-200">Experienced installers and project managers for flawless execution.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 text-orange-400">•</span>
+                  <span className="text-gray-200">Dedicated support staff available to answer questions and coordinate deliveries.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 text-orange-400">•</span>
+                  <span className="text-gray-200">Quality control specialists ensuring every product meets our high standards.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="overflow-hidden rounded-3xl border border-white/10 shadow-2xl bg-white/5">
+              <div className="relative h-96 w-full">
+                <Image
+                  src="/doors/team.jpeg"
+                  alt="Door services team"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Manufacturing Process Section */}
         <section className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-white to-gray-50">
           <div className="max-w-6xl mx-auto">
@@ -210,7 +248,7 @@ export default function Services() {
               <div className="relative">
                 <div className="absolute inset-0 bg-linear-to-br from-orange-500 to-red-600 rounded-2xl blur-2xl opacity-30 -z-10"></div>
                 <div className="relative bg-white rounded-2xl overflow-hidden shadow-2xl border border-gray-100">
-                  <div className="relative h-80 sm:h-96 md:h-[500px] bg-gray-200">
+                  <div className="relative h-80 sm:h-96 md:h-125 bg-gray-200">
                     <Image
                       src="/doors/machine.jpg"
                       alt="Advanced Door Processing Machine"
