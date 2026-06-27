@@ -143,7 +143,7 @@ export default function DoorsCategory() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">Why Choose 1760 Hardware Doors?</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">Why Choose Nyumbani Doors?</h2>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <span className="text-2xl">✓</span>

@@ -74,7 +74,7 @@ export default function Home() {
     <>
       <Navbar />
 
-      {/* Hero Section - 1760 Hardware */}
+      {/* Hero Section - Nyumbani Doors */}
       <section className="bg-linear-to-br from-black via-slate-900 to-gray-900 text-white py-12 md:py-20 lg:py-32 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -84,7 +84,7 @@ export default function Home() {
                 ✨ Now Available
               </div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
-                <span className="text-orange-500">1760 Hardware</span>
+                <span className="text-orange-500">Nyumbani Doors</span>
               </h1>
               <p className="text-lg sm:text-xl text-gray-300 mb-4 sm:mb-8">
                 Leading Doors Manufacturer & Interior Finishes
@@ -267,13 +267,13 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Product 3: Premium Interior Doors - 1760 */}
+            {/* Product 3: Premium Interior Doors */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
               {/* Product Image */}
               <div className="relative h-60 sm:h-64 overflow-hidden bg-gray-200">
                 <Image
                   src="/doors/1760.jpg"
-                  alt="Premium Interior Doors 1760"
+                  alt="Premium Interior Doors"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -283,12 +283,12 @@ export default function Home() {
               <div className="p-5 sm:p-6">
                 {/* Product Name */}
                 <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-2">
-                  Premium Interior Doors 1760
+                  Premium Interior Doors
                 </h3>
 
                 {/* Description */}
                 <p className="text-gray-600 text-sm mb-4">
-                  Premium quality interior doors featuring the latest 1760 design collection. Crafted with precision and elegance.
+                  Premium quality interior doors from Nyumbani Doors. Crafted with precision and elegance.
                 </p>
 
                 {/* Feature Tags */}
@@ -300,7 +300,7 @@ export default function Home() {
 
                 {/* CTA Button */}
                 <a
-                  href="https://wa.me/254708932609?text=Hi,%20I%20am%20interested%20in%20premium%20interior%20doors%201760"
+                  href="https://wa.me/254708932609?text=Hi,%20I%20am%20interested%20in%20premium%20interior%20doors"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-lg font-semibold transition-colors text-sm"
@@ -515,7 +515,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose 1760 Hardware Section */}
+      {/* Why Choose Nyumbani Doors Section */}
       <section className="py-16 sm:py-24 md:py-32 relative overflow-hidden">
         {/* Premium Gradient Background */}
         <div className="absolute inset-0 bg-linear-to-br from-slate-950 via-orange-950 to-slate-900"></div>
@@ -548,7 +548,7 @@ export default function Home() {
               <p className="text-orange-200 text-xs sm:text-sm font-bold tracking-widest uppercase drop-shadow-lg">Why Leading Businesses Trust Us</p>
             </div>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 tracking-tight text-white drop-shadow-lg">
-              Why Choose <span className="bg-linear-to-r from-orange-400 via-amber-400 to-red-400 bg-clip-text text-transparent">1760 Hardware</span>
+              Why Choose <span className="bg-linear-to-r from-orange-400 via-amber-400 to-red-400 bg-clip-text text-transparent">Nyumbani Doors</span>
             </h2>
             <div className="flex items-center justify-center gap-3 mb-6">
               <div className="h-1 w-12 bg-linear-to-r from-transparent to-orange-500"></div>
@@ -744,7 +744,7 @@ export default function Home() {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl group-hover:scale-150 transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
                 
                 <div className="relative">
-                  <div className="inline-flex items-center justify-center sm:justify-start w-full sm:w-auto w-16 h-16 rounded-2xl bg-linear-to-br from-blue-500 to-cyan-500 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-2xl">
+                  <div className="inline-flex items-center justify-center sm:justify-start w-16 h-16 rounded-2xl bg-linear-to-br from-blue-500 to-cyan-500 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-2xl">
                     <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11z"/></svg>
                   </div>
                   <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-blue-400 group-hover:to-cyan-400 group-hover:bg-clip-text transition-all duration-300 text-center sm:text-left">Doors Manufacturing</h3>
@@ -769,7 +769,7 @@ export default function Home() {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl group-hover:scale-150 transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
                 
                 <div className="relative">
-                  <div className="inline-flex items-center justify-center sm:justify-start w-full sm:w-auto w-16 h-16 rounded-2xl bg-linear-to-br from-amber-500 to-yellow-500 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-2xl">
+                  <div className="inline-flex items-center justify-center sm:justify-start w-16 h-16 rounded-2xl bg-linear-to-br from-amber-500 to-yellow-500 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-2xl">
                     <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5.04-6.71l-2.75 3.54h2.5v2.17h2.58v-2.17h2.5z"/></svg>
                   </div>
                   <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-amber-400 group-hover:to-yellow-400 group-hover:bg-clip-text transition-all duration-300 text-center sm:text-left">Professional Installation</h3>
@@ -794,7 +794,7 @@ export default function Home() {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500/10 rounded-full blur-3xl group-hover:scale-150 transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
                 
                 <div className="relative">
-                  <div className="inline-flex items-center justify-center sm:justify-start w-full sm:w-auto w-16 h-16 rounded-2xl bg-linear-to-br from-purple-500 to-pink-500 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-2xl">
+                  <div className="inline-flex items-center justify-center sm:justify-start w-16 h-16 rounded-2xl bg-linear-to-br from-purple-500 to-pink-500 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-2xl">
                     <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
                   </div>
                   <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300 text-center sm:text-left">Design Consultation</h3>
@@ -819,7 +819,7 @@ export default function Home() {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/10 rounded-full blur-3xl group-hover:scale-150 transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
                 
                 <div className="relative">
-                  <div className="inline-flex items-center justify-center sm:justify-start w-full sm:w-auto w-16 h-16 rounded-2xl bg-linear-to-br from-green-500 to-emerald-500 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-2xl">
+                  <div className="inline-flex items-center justify-center sm:justify-start w-16 h-16 rounded-2xl bg-linear-to-br from-green-500 to-emerald-500 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-2xl">
                     <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
                   </div>
                   <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-green-400 group-hover:to-emerald-400 group-hover:bg-clip-text transition-all duration-300 text-center sm:text-left">Bulk Supply</h3>
@@ -844,7 +844,7 @@ export default function Home() {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-red-500/10 rounded-full blur-3xl group-hover:scale-150 transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
                 
                 <div className="relative">
-                  <div className="inline-flex items-center justify-center sm:justify-start w-full sm:w-auto w-16 h-16 rounded-2xl bg-linear-to-br from-red-500 to-rose-500 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-2xl">
+                  <div className="inline-flex items-center justify-center sm:justify-start w-16 h-16 rounded-2xl bg-linear-to-br from-red-500 to-rose-500 text-white mb-6 group-hover:scale-125 transition-transform duration-300 shadow-2xl">
                     <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
                   </div>
                   <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-linear-to-r group-hover:from-red-400 group-hover:to-rose-400 group-hover:bg-clip-text transition-all duration-300 text-center sm:text-left">24/7 Support</h3>

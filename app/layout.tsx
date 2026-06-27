@@ -9,8 +9,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "1760 Hardware - Doors Manufacturer & Supplier in Kajiado County",
-  description: "Leading doors manufacturer and hardware supplier in Kajiado County, providing quality doors and hardware solutions",
+  title: "Nyumbani Doors - Doors Manufacturer & Supplier in Kajiado County",
+  description: "Leading door manufacturer and supplier in Kajiado County, providing quality doors and hardware solutions",
   icons: {
     icon: "/favicon.svg",
   },

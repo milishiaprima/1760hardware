@@ -47,7 +47,7 @@ export default function ContactUs() {
       icon: Mail,
       title: 'Email Support',
       description: 'Send us an email anytime',
-      details: 'info@1760hardware.com',
+      details: 'info@nyumbanidoors.com',
       color: 'from-orange-500 to-red-500',
       lightColor: 'from-orange-50 to-red-50',
     },
@@ -90,7 +90,7 @@ export default function ContactUs() {
               <p className="text-red-200 text-xs sm:text-sm font-bold tracking-widest uppercase drop-shadow-lg">Get In Touch</p>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 tracking-tight text-white drop-shadow-lg">
-              Contact <span className="bg-linear-to-r from-orange-400 via-red-400 to-pink-400 bg-clip-text text-transparent">1760 Hardware</span>
+              Contact <span className="bg-linear-to-r from-orange-400 via-red-400 to-pink-400 bg-clip-text text-transparent">Nyumbani Doors</span>
             </h1>
             <p className="text-base sm:text-lg text-gray-200 max-w-2xl mx-auto leading-relaxed">
               We&apos;re here to help! Reach out to us with any questions or inquiries about our products and services
@@ -308,7 +308,7 @@ export default function ContactUs() {
                 <div>
                   <h3 className="text-2xl font-bold text-slate-900 mb-3">Our Location</h3>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    1760 Hardware is conveniently located in Kiserian Town on Magadi Road, serving customers throughout Kenya with premium door solutions and hardware supplies.
+                    Nyumbani Doors is conveniently located in Kiserian Town on Magadi Road, serving customers throughout Kenya with premium door solutions and hardware supplies.
                   </p>
                 </div>
 
@@ -334,8 +334,8 @@ export default function ContactUs() {
                       <Mail className="text-red-600 shrink-0 mt-1" size={24} />
                       <div>
                         <p className="font-semibold text-slate-900">Email</p>
-                        <a href="mailto:info@1760hardware.com" className="text-red-600 hover:text-red-700 font-medium">
-                          info@1760hardware.com
+                        <a href="mailto:info@nyumbanidoors.com" className="text-red-600 hover:text-red-700 font-medium">
+                          info@nyumbanidoors.com
                         </a>
                       </div>
                     </div>
@@ -352,7 +352,7 @@ export default function ContactUs() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="1760 Hardware Location - Kiserian Town, Magadi Road"
+                  title="Nyumbani Doors Location - Kiserian Town, Magadi Road"
                   className="w-full h-full"
                 />
               </div>

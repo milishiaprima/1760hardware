@@ -275,7 +275,7 @@ export default function Services() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-                  Why Choose <span className="text-orange-500">1760 Hardware?</span>
+                  Why Choose <span className="text-orange-500">Nyumbani Doors?</span>
                 </h2>
                 <div className="space-y-4">
                   {[

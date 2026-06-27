@@ -12,7 +12,7 @@ export default function Reviews() {
       name: 'James Omondi',
       rating: 5,
       date: '2024-06-10',
-      comment: 'Excellent service! The doors are of premium quality and the installation was quick and professional. Highly recommend 1760 Hardware!',
+      comment: 'Excellent service! The doors are of premium quality and the installation was quick and professional. Highly recommend Nyumbani Doors!',
       verified: true,
     },
     {

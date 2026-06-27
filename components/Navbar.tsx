@@ -21,10 +21,10 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <div className="bg-linear-to-r from-orange-500 to-red-600 text-white px-3 py-1.5 rounded-lg font-bold text-lg shadow-lg group-hover:shadow-orange-500/50 group-hover:shadow-lg transition-all duration-300">
-              1760
+              ND
             </div>
             <span className="hidden sm:inline font-bold text-white text-lg group-hover:text-orange-400 transition-colors">
-            1760 Hardware
+            Nyumbani Doors
             </span>
           </Link>
 
